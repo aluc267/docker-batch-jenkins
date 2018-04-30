@@ -5,7 +5,7 @@ USER root
 RUN apk update
 RUN apk add python3 jq cargo
 
-RUN pip3 install awscli
+RUN pip3 install awscli rainbow
 RUN curl -o /usr/local/bin/ecs https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-linux-amd64-latest
 RUN chmod +x /usr/local/bin/ecs
 
