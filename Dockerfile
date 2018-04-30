@@ -3,7 +3,7 @@ FROM jenkinsci/blueocean:1.4.2
 USER root
 
 RUN apk update
-RUN apk add python3 jq cargo
+RUN apk add python3 jq cargo nodejs
 
 RUN pip3 install awscli rainbow
 RUN curl -o /usr/local/bin/ecs https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-linux-amd64-latest
